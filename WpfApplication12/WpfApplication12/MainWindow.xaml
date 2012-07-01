@@ -75,9 +75,9 @@
 		</Style>
 		<DataTemplate x:Key="DataTemplate1">
 			<StackPanel>
-				<Image Source="{Binding Property1}" HorizontalAlignment="Left" Height="362" Width="362"/>
-				<TextBlock Text="{Binding Property2}" FontSize="24"/>
-				<TextBlock Text="{Binding Property3}" FontSize="24"/>
+				<Image Source="{Binding Property1}" HorizontalAlignment="Left" Height="95.333" Width="82.667"/>
+				<TextBlock Text="{Binding Property2}" FontSize="12"/>
+				<TextBlock Text="{Binding Property3}" FontSize="12"/>
 			</StackPanel>
 		</DataTemplate>
 		<Style x:Key="ControlStyle1" TargetType="{x:Type Control}">
@@ -100,6 +100,10 @@
 	</Window.Resources>
 
 	<Grid x:Name="LayoutRoot" DataContext="{Binding Source={StaticResource SampleDataSource}}">
-		<ListBox Margin="8" ItemTemplate="{DynamicResource DataTemplate1}" ItemsSource="{Binding Collection}" ItemsPanel="{DynamicResource ItemsPanelTemplate1}" ItemContainerStyle="{DynamicResource ListBoxItemStyle1}" FocusVisualStyle="{DynamicResource ControlStyle1}"/>
+		<ListBox x:Name="L" Margin="0,0,16,0" ItemTemplate="{DynamicResource DataTemplate1}" ItemsSource="{Binding Collection}" ItemsPanel="{DynamicResource ItemsPanelTemplate1}" ItemContainerStyle="{DynamicResource ListBoxItemStyle1}" FocusVisualStyle="{DynamicResource ControlStyle1}" Height="159" VerticalAlignment="Bottom"/>
+		<Grid x:Name="grid" Margin="10,10,10,140" DataContext="{Binding Mode=OneWay}">
+			<Image Source="{Binding SelectedItem.Property1, ElementName=L}"/>
+		</Grid>
+
 	</Grid>
 </Window>
