@@ -1,0 +1,9 @@
+C:\Users\user\Documents\Expression\Blend 4\Projects\WpfApplication7\WpfApplication7\bin\Debug\WpfApplication7.exe
+C:\Users\user\Documents\Expression\Blend 4\Projects\WpfApplication7\WpfApplication7\bin\Debug\WpfApplication7.pdb
+C:\Users\user\Documents\Expression\Blend 4\Projects\WpfApplication7\WpfApplication7\obj\Debug\MainWindow.baml
+C:\Users\user\Documents\Expression\Blend 4\Projects\WpfApplication7\WpfApplication7\obj\Debug\MainWindow.g.cs
+C:\Users\user\Documents\Expression\Blend 4\Projects\WpfApplication7\WpfApplication7\obj\Debug\App.g.cs
+C:\Users\user\Documents\Expression\Blend 4\Projects\WpfApplication7\WpfApplication7\obj\Debug\WpfApplication7_MarkupCompile.cache
+C:\Users\user\Documents\Expression\Blend 4\Projects\WpfApplication7\WpfApplication7\obj\Debug\WpfApplication7.g.resources
+C:\Users\user\Documents\Expression\Blend 4\Projects\WpfApplication7\WpfApplication7\obj\Debug\WpfApplication7.exe
+C:\Users\user\Documents\Expression\Blend 4\Projects\WpfApplication7\WpfApplication7\obj\Debug\WpfApplication7.pdb

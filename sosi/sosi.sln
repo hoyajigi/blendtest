@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sosi", "sosi\sosi.csproj", "{6fe634c4-d633-4227-916b-7349ffbadf37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FE634C4-D633-4227-916B-7349FFBADF37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE634C4-D633-4227-916B-7349FFBADF37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE634C4-D633-4227-916B-7349FFBADF37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE634C4-D633-4227-916B-7349FFBADF37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

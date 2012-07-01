@@ -1,0 +1,19 @@
+﻿<!--
+      *********    이 파일을 수정하지 마십시오.     *********
+      이 파일은 디자인 도구에서 다시 생성했습니다. 이 파일을
+      변경하면 오류가 발생할 수 있습니다.
+-->
+<SampleData:SampleDataSource xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.SampleDataSource">
+	<SampleData:SampleDataSource.Collection>
+		<SampleData:Item Property1="SampleDataSource_Files\image01.png" Property2="Aaberg, Jesper" Property3="$100"/>
+		<SampleData:Item Property1="SampleDataSource_Files\image02.png" Property2="Adams, Ellen" Property3="$29.99"/>
+		<SampleData:Item Property1="SampleDataSource_Files\image03.png" Property2="Adams, Terry" Property3="$249.99"/>
+		<SampleData:Item Property1="SampleDataSource_Files\image04.png" Property2="Adams, Terry" Property3="$1000"/>
+		<SampleData:Item Property1="SampleDataSource_Files\image05.png" Property2="Penor, Lori" Property3="$2.99"/>
+		<SampleData:Item Property1="SampleDataSource_Files\image01.png" Property2="Pfeiffer, Michael" Property3="$300"/>
+		<SampleData:Item Property1="SampleDataSource_Files\image02.png" Property2="Philips, Carol" Property3="$10,999"/>
+		<SampleData:Item Property1="SampleDataSource_Files\image03.png" Property2="Poe, Toni" Property3="$49.99"/>
+		<SampleData:Item Property1="SampleDataSource_Files\image04.png" Property2="Hicks, Cassie" Property3="$25.34"/>
+		<SampleData:Item Property1="SampleDataSource_Files\image05.png" Property2="Argentiero, Luca" Property3="$100"/>
+	</SampleData:SampleDataSource.Collection>
+</SampleData:SampleDataSource>

@@ -1,0 +1,51 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+	mc:Ignorable="d"
+	x:Class="WpfApplication6.UserControl1"
+	x:Name="UserControl"
+	d:DesignWidth="640" d:DesignHeight="480" Width="100" Height="100">
+	<UserControl.Resources>
+		<Storyboard x:Key="Storyboard1" AutoReverse="False" RepeatBehavior="Forever">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="regularPolygon">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.44"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.992"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="regularPolygon">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.44"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.995"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="regularPolygon">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="2.5"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.124"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="regularPolygon">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-0.5"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.25"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+	<UserControl.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+		</EventTrigger>
+	</UserControl.Triggers>
+
+	<Grid x:Name="LayoutRoot">
+		<ed:RegularPolygon x:Name="regularPolygon" Fill="#FFF4F4F5" InnerRadius="0.47211" PointCount="5" Stretch="Fill" Stroke="Black" RenderTransformOrigin="0.5,0.5">
+			<ed:RegularPolygon.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</ed:RegularPolygon.RenderTransform>
+		</ed:RegularPolygon>
+	</Grid>
+</UserControl>

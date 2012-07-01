@@ -1,0 +1,31 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" mc:Ignorable="d"
+	x:Class="WpfApplication1.MainWindow"
+	x:Name="Window"
+	Title="MainWindow"
+	Width="640" Height="480">
+
+	<Window.Resources>
+		<Storyboard x:Key="McCain_wmv">
+			<MediaTimeline Source="McCain.wmv" Storyboard.TargetName="McCain_wmv" d:DesignTimeNaturalDuration="29.349"/>
+		</Storyboard>
+		<VisualBrush x:Key="McCain_wmv1" Visual="{Binding ElementName=McCain_wmv}"/>
+		<ImageBrush x:Key="IUBrush1" ImageSource="pack://siteoforigin:,,,/2.jpg"/>
+		<VisualBrush x:Key="McCain_wmv2" Visual="{Binding ElementName=McCain_wmv}"/>
+		<ImageBrush x:Key="ImageBrush1" ImageSource="pack://siteoforigin:,,,/2.jpg"/>
+	</Window.Resources>
+	<Window.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource McCain_wmv}"/>
+		</EventTrigger>
+	</Window.Triggers>
+
+	<Grid x:Name="LayoutRoot">
+		<ed:RegularPolygon Fill="{DynamicResource McCain_wmv2}" InnerRadius="0.47211" Margin="299,1,0,111" PointCount="5" Stretch="Fill" Stroke="Black" OpacityMask="{DynamicResource McCain_wmv1}"/>
+		<MediaElement x:Name="McCain_wmv" HorizontalAlignment="Right" Margin="0,0,-96,-133" Stretch="Fill" Width="320" Height="240" VerticalAlignment="Bottom"/>
+		<Image HorizontalAlignment="Right" Height="4080" Margin="0,0,-5216,-3973" Source="pack://siteoforigin:,,,/2.jpg" Stretch="Fill" VerticalAlignment="Bottom" Width="5440"/>
+		<ed:RegularPolygon Fill="{DynamicResource ImageBrush1}" InnerRadius="0.47211" PointCount="5" Stretch="Fill" Stroke="Black" Margin="0,0,299,148"/>
+	</Grid>
+</Window>
